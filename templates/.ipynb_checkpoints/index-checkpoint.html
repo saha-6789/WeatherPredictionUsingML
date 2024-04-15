@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select City and Date</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="city">Choose a city:</label>
+        <select name="city" id="city">
+            <option value="bangalore">Bangalore</option>
+            <option value="Ballari">Ballari</option>
+            <option value="Hubli">Hubli</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Delhi">Delhi</option>
+        </select>
+
+        <label for="date">Choose a date:</label>
+        <input type="date" id="date" name="date">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

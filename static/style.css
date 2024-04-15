@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input
+[type="date"], select {
+margin-bottom: 10px;
+padding: 5px;
+}
+
+input[type="submit"] {
+padding: 5px 15px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #0056b3;
+}

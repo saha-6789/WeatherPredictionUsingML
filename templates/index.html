@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select City and Date</title>
+    <style>
+        /* Overall body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('./static/weather.jpg'); /* Link to your background image */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Form styling */
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 300px; /* Adjust width as needed */
+        }
+
+        /* Header styling */
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Select and input fields styling */
+        select, input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Button styling */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <h2>Weather Prediction</h2> <!-- Header for the form -->
+        <label for="city">Choose a city:</label>
+        <select name="city" id="city">
+            <option value="bangalore">Bangalore</option>
+            <option value="Ballari">Ballari</option>
+            <option value="Hubli">Hubli</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Delhi">Delhi</option>
+        </select>
+
+        <label for="date">Choose a date:</label>
+        <input type="date" id="date" name="date"> <!-- Corrected input tag -->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
